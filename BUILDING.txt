@@ -1,0 +1,26 @@
+Codex and Book Reader 0.5.0-beta1 - source
+By Squibster99, with assistance from Codex by OpenAI.
+
+Use a fresh extracted source folder, Python 3.12+ and Zig 0.13.0 on Windows.
+From this folder run (replace the example paths with your own):
+python prepare_cori.py --output C:\ReaderBuild\Cori --cache C:\ReaderBuild\Downloads
+python build_portable.py --voice-package C:\ReaderBuild\Cori --compiler C:\Tools\zig\zig.exe
+
+Preparation downloads and hash-checks pinned Python, wheel and voice files listed
+in Source/cori-package-lock.json. Build output is Build/Package/Mods. No external
+Python or compiler is required by players using the ready-built main download.
+The fixture C file builds a maintainer test host; it is not installed in the game.
+The build does not generate or include a game-text catalogue. Run Setup Reader.cmd
+only after installing your own copy in your game; do not redistribute its output.
+
+UpstreamSource/provenance.json identifies exact dependency sources. The Piper
+PyPI source distribution is accompanied by its complete tagged build source and
+the eSpeak NG source revision used by its build (including ucd-tools). This GitHub repository links to those archives in UpstreamSource/README.md;
+they are bundled in the separate Nexus source download. Their own
+build instructions and licences are inside those upstream archives. Prepared dependencies
+remain the pinned upstream binaries; rebuilding them is separate from building
+this mod's launcher. The compiler itself is not bundled.
+
+See ADAPTING.md for voice and language adaptations. Keep third-party notices,
+licences and corresponding source available when redistributing. This source
+download contains no extracted game text, personal settings or diagnostic logs.

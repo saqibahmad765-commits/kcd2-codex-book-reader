@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bryce's Piper TTS Voices</title>
+  <link rel="stylesheet" href="style.css">
+  
+  
+</head>
+<body>
+<header>
+	<h1>Bryce's Piper TTS Voices</h1>
+</header>
+<main>
+<a href="http://brycebeattie.com">Back to my site</a>
+<h2>About</h2>
+<p>My goal is to create several voice models for use with the <a href="https://github.com/rhasspy/piper">Piper text-to-speech software</a>. I want there to be more voices available without restrictive licenses. Many of the widely available datasets and thus the voices created from them have "for research and learning purposes only"-style licenses.</p>
+<h2>Voice Models</h2>
+<div id="voiceTable"></div>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Voice</th>
+            <th>Notes</th>
+            <th>Sample</th>
+        </tr>
+    </thead>
+    <tbody>
+                <tr>
+            <td>LJSpeech (medium)</td>
+          <td><p>US English female voice. Single speaker. Trained from scratch for 1000 epochs on medium quality settings using the LJ Speech dataset. I reencoded the recordings to a bit rate of 22050 Hz so it would match other voices released for Piper TTS</p>
+              <br /><p><b>License:</b> public domain</p>
+              <br /><b>Downloads:</b> <a href="https://sfo3.digitaloceanspaces.com/bkmdls/lj-med.onnx">.onnx file</a> 
+            | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/lj-med.onnx.json">config json file</a>
+  | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/lj-med_1000.ckpt">.ckpt file (for training)</a>
+          
+          </td>
+            <td>
+            <audio controls>
+            
+            <source src="https://sfo3.digitaloceanspaces.com/bkmdls/ljspeech-med.wav" type="audio/mpeg">
+            Your browser does not support the audio tag.
+            </audio>
+          
+          </td>
+        </tr>
+                <tr>
+            <td>LJSpeech (high)</td>
+          <td><p>US English female voice. Single speaker. Trained from scratch for 2000 epochs on high quality settings using the LJ Speech dataset. I reencoded the recordings to a bit rate of 22050 Hz so it would match other voices released for Piper TTS</p>
+              <br /><p><b>License:</b> public domain</p>
+              <br /><b>Downloads:</b> <a href="https://sfo3.digitaloceanspaces.com/bkmdls/ljspeech.onnx">.onnx file</a> 
+            | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/ljspeech.onnx.json">config json file</a>
+  | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/ljspeech-2000.ckpt">.ckpt file (for training)</a>
+          
+          </td>
+            <td>
+            <audio controls>
+            
+            <source src="https://sfo3.digitaloceanspaces.com/bkmdls/ljspeech-high.wav" type="audio/mpeg">
+            Your browser does not support the audio tag.
+            </audio>
+          
+          </td>
+        </tr>
+                <tr>
+            <td>Jenny (Dioco)</td>
+          <td><p>UK English female voice (Irish). Single speaker. Trained from scratch for 287 epochs on medium quality settings using the ~30 hour Jenny (Dioco) dataset. I reencoded the recordings to a bit rate of 22050 Hz so it would match other voices released for Piper TTS</p>
+              <br /><p><b>License:</b> <a href='https://www.kaggle.com/datasets/noml4u/jenny-tts-dataset'>Attribution required, similar to CC BY</a> See the link for license details. I impose no further license or restrictions.</p>
+              <br /><b>Downloads:</b> <a href="https://sfo3.digitaloceanspaces.com/bkmdls/jenny.onnx">.onnx file</a> 
+            | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/jenny.onnx.json">config json file</a>
+          
+          </td>
+            <td>
+            <audio controls>
+            
+            <source src="https://sfo3.digitaloceanspaces.com/bkmdls/jenny.wav" type="audio/mpeg">
+            Your browser does not support the audio tag.
+            </audio>
+          
+          </td>
+        </tr>
+                <tr>
+            <td>Clean 100</td>
+          <td><p>US English voice. Multi-Speaker with 244 speakers. Trained from scratch on medium quality settings for 1000 epochs. This comes from the "Clean 100" subset of the LibriTTS-r dataset, which is a sound-improved version of the LibriTTS dataset, which is derived from the original materials of the LibriSpeech corpus. I removed the files they have listed as "failed speech restoration." The '100' comes from 100 hours of recordings in the original dataset. The sample is just the first speaker in the set. A zip containing a sample for each speaker in the set can be <a href='https://sfo3.digitaloceanspaces.com/bkmdls/clean100_samples.zip'>downloaded here</a></p>
+              <br /><p><b>License:</b> <a href='https://www.openslr.org/141/'>CC BY 4.0</a> This is for the original dataset. I impose no further license or restriction.</p>
+              <br /><b>Downloads:</b> <a href="https://sfo3.digitaloceanspaces.com/bkmdls/clean100.onnx">.onnx file</a> 
+            | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/clean100.onnx.json">config json file</a>
+          
+          </td>
+            <td>
+            <audio controls>
+            
+            <source src="https://sfo3.digitaloceanspaces.com/bkmdls/clean100.wav" type="audio/mpeg">
+            Your browser does not support the audio tag.
+            </audio>
+          
+          </td>
+        </tr>
+                <tr>
+            <td>Cori (high)</td>
+          <td><p>UK English female voice. Single Speaker. Trained from scratch on high quality settings for 500 epochs. I put together the dataset, which ended up with about 24 hours of recordings. All recordings came from LibriVox.org.</p>
+              <br /><p><b>License:</b> public domain</p>
+              <br /><b>Downloads:</b> <a href="https://sfo3.digitaloceanspaces.com/bkmdls/cori-high.onnx">.onnx file</a> 
+            | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/cori-high.onnx.json">config json file</a>
+  | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/cori-high-500.ckpt">.ckpt file (for training)</a>
+          
+          </td>
+            <td>
+            <audio controls>
+            
+            <source src="https://sfo3.digitaloceanspaces.com/bkmdls/cori-high.wav" type="audio/mpeg">
+            Your browser does not support the audio tag.
+            </audio>
+          
+          </td>
+        </tr>
+                <tr>
+            <td>Cori (medium)</td>
+          <td><p>UK English female voice. Single Speaker. Trained from scratch on medium quality settings for 640 epochs. I put together the dataset, which ended up with about 24 hours of recordings. All recordings came from LibriVox.org.</p>
+              <br /><p><b>License:</b> public domain</p>
+              <br /><b>Downloads:</b> <a href="https://sfo3.digitaloceanspaces.com/bkmdls/cori-med.onnx">.onnx file</a> 
+            | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/cori-med.onnx.json">config json file</a>
+  | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/cori-med-640.ckpt">.ckpt file (for training)</a>
+          
+          </td>
+            <td>
+            <audio controls>
+            
+            <source src="https://sfo3.digitaloceanspaces.com/bkmdls/cori-med.wav" type="audio/mpeg">
+            Your browser does not support the audio tag.
+            </audio>
+          
+          </td>
+        </tr>
+                <tr>
+            <td>Kristin</td>
+          <td><p>US English female voice. Single Speaker. Trained from scratch on medium quality settings for 2000 epochs. I put together the dataset, which ended up with about 11.5 hours of recordings. All recordings came from LibriVox.org.</p>
+              <br /><p><b>License:</b> public domain</p>
+              <br /><b>Downloads:</b> <a href="https://sfo3.digitaloceanspaces.com/bkmdls/kristin.onnx">.onnx file</a> 
+            | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/kristin.onnx.json">config json file</a>
+  | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/kristin-2000.ckpt">.ckpt file (for training)</a>
+          
+          </td>
+            <td>
+            <audio controls>
+            
+            <source src="https://sfo3.digitaloceanspaces.com/bkmdls/kristin-sample.wav" type="audio/mpeg">
+            Your browser does not support the audio tag.
+            </audio>
+          
+          </td>
+        </tr>
+                <tr>
+            <td>John</td>
+          <td><p>US English male voice. Single Speaker. Finetuned from Kristin (above) on medium quality settings for an additional 600 epochs. I put together the dataset, which ended up with about 12.5 hours of recordings. All recordings came from LibriVox.org.</p>
+              <br /><p><b>License:</b> public domain</p>
+              <br /><b>Downloads:</b> <a href="https://sfo3.digitaloceanspaces.com/bkmdls/john.onnx">.onnx file</a> 
+            | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/john.onnx.json">config json file</a>
+  | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/john-2599.ckpt">.ckpt file (for training)</a>
+          
+          </td>
+            <td>
+            <audio controls>
+            
+            <source src="https://sfo3.digitaloceanspaces.com/bkmdls/john-sample.wav" type="audio/mpeg">
+            Your browser does not support the audio tag.
+            </audio>
+          
+          </td>
+        </tr>
+                <tr>
+            <td>Bryce</td>
+          <td><p>US English male voice. Single Speaker. Finetuned for an additional 1000 epochs from an unreleased voice which had 2500 epochs. This is my voice, I only recorded about 750 samples.</p>
+              <br /><p><b>License:</b> public domain</p>
+              <br /><b>Downloads:</b> <a href="https://sfo3.digitaloceanspaces.com/bkmdls/bryce.onnx">.onnx file</a> 
+            | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/bryce.onnx.json">config json file</a>
+  | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/bryce-3499.ckpt">.ckpt file (for training)</a>
+          
+          </td>
+            <td>
+            <audio controls>
+            
+            <source src="https://sfo3.digitaloceanspaces.com/bkmdls/bryce-sample.wav" type="audio/mpeg">
+            Your browser does not support the audio tag.
+            </audio>
+          
+          </td>
+        </tr>
+                <tr>
+            <td>Norman</td>
+          <td><p>US English male voice. Single Speaker. Trained from scratch on medium quality settings for 1200 epochs. I put together the dataset, which ended up with about 15.5 hours of recordings. All recordings came from LibriVox.org. I forgot to save the ckpt file on this one, sorry.</p>
+              <br /><p><b>License:</b> public domain</p>
+              <br /><b>Downloads:</b> <a href="https://sfo3.digitaloceanspaces.com/bkmdls/norman.onnx">.onnx file</a> 
+            | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/norman.onnx.json">config json file</a>
+          
+          </td>
+            <td>
+            <audio controls>
+            
+            <source src="https://sfo3.digitaloceanspaces.com/bkmdls/norman-sample.wav" type="audio/mpeg">
+            Your browser does not support the audio tag.
+            </audio>
+          
+          </td>
+        </tr>
+                <tr>
+            <td>ManyVoice</td>
+          <td><p>A mix of 12 US and 4 UK English voices. 16 total speakers. Trained from scratch on medium quality settings for 400 epochs. I put together the dataset, which ended up with (I think about) 8 hours of recordings per voice, with a couple of voices only having 4. All recordings were public domain and came from LibriVox.org. I used various tools to improve the sound quality of the recordings. To my ear, the speakers that I've trained as solo voices sound the same as when they appear as part of this multivoice model. The sample is just a speaker in the set. A zip containing a sample for each speaker in the set can be <a href='https://sfo3.digitaloceanspaces.com/bkmdls/mv2_samples.zip'>downloaded here</a></p>
+              <br /><p><b>License:</b> public domain</p>
+              <br /><b>Downloads:</b> <a href="https://sfo3.digitaloceanspaces.com/bkmdls/mv2.onnx">.onnx file</a> 
+            | <a href="https://sfo3.digitaloceanspaces.com/bkmdls/mv2.onnx.json">config json file</a>
+          
+          </td>
+            <td>
+            <audio controls>
+            
+            <source src="https://sfo3.digitaloceanspaces.com/bkmdls/mv2_sample.wav" type="audio/mpeg">
+            Your browser does not support the audio tag.
+            </audio>
+          
+          </td>
+        </tr>
+            </tbody>
+</table>
+<p><b>Note:</b> Feel free to use these for any legal and ethical purpose. If somebody wants to upload these to HuggingFace or somewhere similar, you have my blessing.</p>
+
+</main>
+  <br/><br/><br/>
+</body>
+</html>

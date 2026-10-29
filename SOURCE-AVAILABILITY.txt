@@ -1,0 +1,4 @@
+Matching source: Codex-and-Book-Reader-0.5.0-beta1-source.7z
+Available alongside the main file on the Codex and Book Reader Nexus page.
+Includes original code, build instructions and matching Piper/eSpeak source archives.
+See COPYING and THIRD-PARTY-NOTICES.md for applicable licences.
